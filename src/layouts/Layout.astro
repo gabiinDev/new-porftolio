@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta name="description" content="Gabriel Diaz Desarrollador de Software" />
+    <meta property="og:image" content="https://gabrieldiazdev.com/logo.png" />
+
+    <meta property="og:image" content="https://gabrieldiazdev.com/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="559" />
+    <meta property="og:image:height" content="294" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gabrieldiazdev.com" />
+    <meta
+      property="og:image:secure_url"
+      content="https://www.gabrieldiazdev.com"
+    />
+    <meta property="og:title" content="Gabriel Diaz | DEV" />
+    <meta property="og:description" content="Desarrollador de Software" />
+    <meta property="fb:app_id" content="2860639850706200" />
+    <meta property="og:site_name" content="Gabriel Diaz | DEV" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+  </head>
+  <body class="h-screen w-screen bg-slate-300">
+    <slot />
+  </body>
+</html>
