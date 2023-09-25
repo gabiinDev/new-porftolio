@@ -1,14 +1,10 @@
 ---
-import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import { NavBar } from "../components/NavBar/NavBar.jsx";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout title="Gabriel Diaz | DEV">
-  <main
-    class="bg-slate-300 w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
-  >
-    <div class="pb-32 pt-10">
-      <Card />
-    </div>
-  </main>
+  <NavBar client:visible />
+  <Hero />
 </Layout>

@@ -1,0 +1,61 @@
+---
+import EmailIcon from "./Icon/EmailIcon.astro";
+import GithubIcon from "./Icon/GithubIcon.astro";
+import LinkedinIcon from "./Icon/LinkedinIcon.astro";
+---
+
+<section class="bg-primary px-5 text-white py-32">
+  <div
+    class="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between"
+  >
+    <div class="leading-normal pb-5 md:pb-0">
+      <h1 class="text-4xl lg:text-6xl">
+        Gabriel Diaz
+        <br />
+         Frontend Developer
+      </h1>
+
+      <p class="py-5">
+        Me dedico al desarrollo de software con experiencia laboral de más de
+        diez años. A lo largo de mi carrera profesional, me he enfrentado a
+        diversos desafíos y en la necesidad de idear resoluciones rápidas,
+        eficaces y aplicando nuevos conocimientos en el proceso.
+      </p>
+
+      <div class="flex py-5">
+        <a
+          href="https://github.com/gabiinDev"
+          class="pr-4 inline-block text-accent hover:text-white"
+          target="_blank"
+        >
+          <div class="h-10 w-10">
+            <GithubIcon />
+          </div>
+        </a>
+        <a
+          href="emailto:gabriel@gabrieldiazdev.com"
+          class="pr-4 inline-block text-accent hover:text-white"
+        >
+          <div class="h-10 w-10">
+            <EmailIcon />
+          </div>
+        </a>
+        <a
+          href="https://linkedin.com/gabrieldiazdev"
+          class="pr-4 inline-block text-accent hover:text-white"
+          target="_blank"
+        >
+          <div class="h-10 w-10">
+            <LinkedinIcon />
+          </div>
+        </a>
+        <a
+          href="/#projects"
+          class="btn bg-accent border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent"
+        >
+          See Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
